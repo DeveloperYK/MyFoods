@@ -16,7 +16,7 @@ Then import the project to Android Studio...
 	Make sure dependencies are downloaded correctly, they tend to break when importing to Android Studio so you might have to re-write them 
 	You will also need an emulator or you can use your own phone to present the app 
 	Android Studio allows you to create an emulator, make sure to use API 24, otherwise it might not work properly.  
-	I have left the key to my Firestore back-end and the API keys so they should still work fine, provided the dependencies are correctly downloaded 
+	You will have to sign up to the Spoonacular API and input the authentication key into the code (I stated everywhere to put it). 
 	Here is a link that can help with downloading the app in Android Studio 
 	https://developer.android.com/studio/intro/migrate 
 
