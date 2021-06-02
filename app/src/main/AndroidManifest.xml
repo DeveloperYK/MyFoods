@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.project_v01">
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".util.User"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ChatRoom.ChatRoomRecipesActivity"></activity>
+        <activity android:name=".ChatRoom.ChatbotAnswerActivity" />
+        <activity android:name=".ChatRoom.ChatRoomActivity" />
+        <activity android:name=".SwapMealActivity" />
+        <!--
+               Set to true if your app is Standalone, that is, it does not require the handheld
+               app to run.
+        -->
+        <activity android:name=".UserConditionsActivity" />
+        <activity android:name=".InstructionsActivity" />
+        <activity android:name=".RecipeDetailsActivity" />
+        <activity android:name=".CreatingFoodPlanActivity$FoodPlanListActivity" />
+        <activity android:name=".ShowFoodPlanActivity" />
+        <activity android:name=".CreatingFoodPlanActivity" />
+        <activity android:name=".CreateAccountActivity" />
+        <activity android:name=".LoginActivity" />
+        <!--
+               Set to true if your app is Standalone, that is, it does not require the handheld
+               app to run.
+        -->
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

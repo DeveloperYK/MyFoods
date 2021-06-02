@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fadingEdge="none"
+    tools:context=".ChatRoom.ChatRoomActivity">
+
+    <Button
+        android:id="@+id/back_to_plan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/enter_calories"
+        android:layout_marginTop="4dp"
+        android:background="@android:color/transparent"
+        android:text="@string/back_to_food_plan"
+        android:textColor="@android:color/holo_green_light"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/imageView3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="145dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="48dp"
+        android:src="@drawable/ic_baseline_mood_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="170dp"
+        android:layout_height="141dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="28dp"
+        android:src="@drawable/ic_baseline_chat_bubble_outline_green"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/chatbot_into"
+        android:layout_width="78dp"
+        android:layout_height="54dp"
+        android:layout_marginEnd="48dp"
+        android:text="@string/Chatbox_intro"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView7"
+        app:layout_constraintEnd_toEndOf="@+id/imageView7"
+        app:layout_constraintTop_toTopOf="@+id/imageView7"
+        app:layout_constraintVertical_bias="0.367" />
+
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="300dp"
+        android:layout_height="1dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:background="?android:attr/listDivider"
+        android:foreground="@android:color/holo_green_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <EditText
+        android:id="@+id/chatbox_question"
+        android:layout_width="405dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="40dp"
+        android:hint="@string/ChatBox_question"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+    <Button
+        android:id="@+id/ask_chatbot_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:text="@string/chatbot_button_text"
+        android:textColor="@android:color/holo_green_light"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chatbox_question"
+        app:layout_constraintVertical_bias="0.665"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/suggestions_text"
+        android:layout_width="116dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/suggestions_text"
+        android:textColor="@color/common_google_signin_btn_text_dark_disabled"
+        android:textColorHint="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chatbox_question" />
+
+    <TextView
+        android:id="@+id/suggestion_1"
+        android:layout_width="227dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/tell_me_a_food_fact"
+        android:textColor="@color/common_google_signin_btn_text_dark_disabled"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/suggestions_text" />
+
+    <TextView
+        android:id="@+id/suggestion_2"
+        android:layout_width="227dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/tell_me_food_trivia"
+        android:textColor="@color/common_google_signin_btn_text_dark_disabled"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/suggestion_1" />
+
+    <TextView
+        android:id="@+id/suggestion_3"
+        android:layout_width="267dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/ask_for_recipes"
+        android:textColor="@color/common_google_signin_btn_text_dark_disabled"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/suggestion_2" />
+
+    <TextView
+        android:id="@+id/suggestion_4"
+        android:layout_width="227dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/tell_me_a_joke"
+        android:textColor="@color/common_google_signin_btn_text_dark_disabled"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/suggestion_3" />
+
+    <TextView
+        android:id="@+id/suggestion_5"
+        android:layout_width="227dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/how_much_vitamin_c_is_in_2_apples"
+        android:textColor="@color/common_google_signin_btn_text_dark_disabled"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/suggestion_4" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

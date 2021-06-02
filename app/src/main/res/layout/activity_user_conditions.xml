@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserConditionsActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+
+                android:id="@+id/textView_select_conditions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/select_conditions_text"
+                android:textAlignment="center" />
+
+
+            <CheckBox
+                android:id="@+id/checkbox_diabetes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView_select_conditions"
+                android:layout_marginTop="32dp"
+                android:text="Diabetes" />
+
+            <CheckBox
+                android:id="@+id/checkbox_highCholesterol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/checkbox_diabetes"
+                android:layout_marginTop="24dp"
+                android:text="High Cholesterol" />
+
+            <CheckBox
+                android:id="@+id/checkbox_nothing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="64dp"
+                android:text="@string/checkbox_nothing_text"
+                android:layout_below="@+id/checkbox_highCholesterol" />
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="300dp"
+                android:layout_height="1dp"
+                android:layout_centerHorizontal="true"
+                android:background="?android:attr/listDivider"
+                android:foreground="@android:color/holo_green_light"
+                android:layout_below="@+id/checkbox_nothing" />
+
+            <TextView
+                android:id="@+id/textView_dietary_requirements"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/dietary_requirements_text"
+                android:layout_below="@+id/divider"/>
+
+
+            <CheckBox
+                android:id="@+id/checkbox_vegetarian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="@string/checkbox_vegetarian_text"
+                android:layout_below="@id/textView_dietary_requirements"/>
+
+            <CheckBox
+                android:id="@+id/checkbox_vegan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="50dp"
+                android:text="@string/checkbox_vegan_text"
+                android:layout_below="@+id/checkbox_vegetarian" />
+
+            <View
+                android:id="@+id/divider2"
+                android:layout_width="300dp"
+                android:layout_height="1dp"
+                android:layout_centerHorizontal="true"
+                android:background="?android:attr/listDivider"
+                android:foreground="@android:color/holo_green_light"
+                android:layout_below="@+id/checkbox_vegan" />
+
+            <TextView
+                android:id="@+id/calories_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/calories_text"
+                android:layout_below="@+id/divider2"
+                android:layout_marginTop="30dp"
+                android:layout_centerHorizontal="true"/>
+
+            <EditText
+                android:id="@+id/enter_calories"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/calories_textview"
+                android:hint="1500-3000"
+                android:layout_centerHorizontal="true"/>
+
+
+
+            <Button
+                android:id="@+id/create_account_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="52dp"
+                android:background="@android:color/transparent"
+                android:text="@string/create_account_text"
+                android:textColor="@android:color/holo_green_light"
+                android:textStyle="bold"
+                android:layout_below="@+id/enter_calories"/>
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

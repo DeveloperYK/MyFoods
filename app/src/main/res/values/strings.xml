@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">"MyFoods"</string>
+    <string name="title_text">"Food App "</string>
+    <string name="welcome_text">"Welcome to the App!"</string>
+    <string name="get_started_text">Get Started</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="hello_world">Hello Square World!</string>
+    <string name="email_hint">Email</string>
+    <string name="password">Password</string>
+    <string name="login_text">Login</string>
+    <string name="or_text">Or</string>
+    <string name="create_text">Continue</string>
+    <string name="First_Name_text">First Name</string>
+    <string name="Last_Name_text">Last Name</string>
+    <string name="private_information_text">Private Information</string>
+    <string name="menu_sign_out">Sign Out</string>
+    <string name="recipe_name">Recipe Name</string>
+    <string name="day">DayOfTheWeek</string>
+    <string name="recipe_title">RecipeTitle</string>
+    <string name="ingredient_list">Ingredients List</string>
+    <string name="time_to_make">12 Mins</string>
+    <string name="difficulty_text">Easy</string>
+    <string name="instructions">Instructions</string>
+    <string name="servings_text">Serves: 10</string>
+    <string name="ingredient_text">ingredient</string>
+    <string name="instruction_text">Instructions</string>
+    <string name="select_conditions_text">Hello Name, Please select any conditions you have from the options below</string>
+    <string name="checkbox_nothing_text">None Of The Above</string>
+    <string name="checkbox_vegetarian_text">Vegetarian</string>
+    <string name="dietary_requirements_text">Select any dietary requirements you have</string>
+    <string name="checkbox_vegan_text">Vegan</string>
+    <string name="checkbox_glutenFree_text">Gluten Free</string>
+    <string name="create_account_text">Create Account</string>
+    <string name="calories_text">Enter the acceptable amount of daily calories</string>
+    <string name="create_acc_text">Create Account</string>
+    <string name="swap_text">"SWAP "</string>
+    <string name="title_activity_swap_class">SwapClassActivity</string>
+    <string name="Chatbox_intro">Hi, I\'m a chatbot!</string>
+    <string name="ChatBox_question">"Ask a question "</string>
+    <string name="chatbot_button_text">Ask</string>
+    <string name="suggestions_text">"Suggestions: "</string>
+    <string name="tell_me_a_food_fact">- Tell me a food fact</string>
+    <string name="tell_me_food_trivia">- Tell me food trivia</string>
+    <string name="ask_for_recipes">- Ask for recipes i.e. Meals with chicken</string>
+    <string name="tell_me_a_joke">- Tell me a joke</string>
+    <string name="chatbot_answer_text">Here is what I got!</string>
+    <string name="how_much_vitamin_c_is_in_2_apples">- How much vitamin C is in 2 apples</string>
+    <string name="go_back"><![CDATA[< Go Back]]></string>
+    <string name="back_to_food_plan"><![CDATA[< Back to Food Plan]]></string>
+</resources>
